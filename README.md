@@ -8,20 +8,9 @@ riot用環境 buildはそのうち入れる
 ※es6でgulpfileを書くためにgulpfile.babel.js + .babelrcを使用
 ```
 
-### install
+### router
 
 ```
-$ npm install
+riot-routerを使用 デフォルトのrouterより使いやすい
 ```
 
-### run
-
-```
-$ gulp
-```
-
-### develop
-
-```
-$ gulp watch
-```

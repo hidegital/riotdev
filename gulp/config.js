@@ -1,5 +1,5 @@
 const paths = {
-	js:         ['src/js/**/*.js', 'src/js/**/*.jade'],
+	js:         ['src/js/**/*.js', 'src/js/**/*.jade' ,'src/js/**/*.tag'],
 	jade:       'src/jade/*.jade',
 	jade_watch: 'src/jade/**/*.jade',
 	sass:       'src/sass/*.sass',
