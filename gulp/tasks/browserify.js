@@ -22,3 +22,4 @@ gulp.task('browserify', () => {
 		.pipe(source('app.js'))
 		.pipe(gulp.dest(paths.js_dir));
 });
+
