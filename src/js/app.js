@@ -26,7 +26,19 @@ riot.router.routes([
 riot.router.start();
 
 
+/*下記でfunctionをimport,module以下にmoduleを持つ*/
+import test from './module/testFnc';
+test();
 
+import timeout from './module/setTimeOut';
+
+var p = timeout(1000).then(() => {
+	return timeout(2000);
+}).then(() => {
+	throw new Error("hmm");
+}).catch(err => {
+	return Promise.all([timeout(100), timeout(200)]);
+});
 
 
 
