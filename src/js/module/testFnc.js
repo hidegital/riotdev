@@ -1,3 +1,3 @@
 export default function test(){
-	console.log('testtesttest');
+	console.log('importtest');
 }
