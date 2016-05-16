@@ -2,7 +2,7 @@
 
 import riot     from 'riot'
 import router   from 'riot-router'
-
+//import riotForm from 'riot-form'
 import home     from './components/home.jade'
 import app      from './components/app.jade'
 import test1    from './components/test1.jade'
@@ -10,6 +10,8 @@ import test2    from './components/test2.jade'
 import notfound from './components/notfound.jade'
 import list     from './components/list.jade'
 import testform from './components/testform.jade'
+import picker   from './components/picker.tag'
+import application from './components/application.tag'
 
 riot.mount('*');
 
@@ -28,6 +30,7 @@ riot.router.routes([
 riot.router.start();
 
 
+
 /*下記でfunctionをimport,module以下にmoduleを持つ*/
 import test from './module/testFnc';
 test();
@@ -44,6 +47,26 @@ var p = timeout(1000).then(() => {
 
 
 
+var arrayhelper = {
+	filterByLabels : function(items, labels, filter)
+	{
+		for (var item in items)
+		{
+			item = items[item]
+			// We need a combinedvalue, consisting out of the itemvalues with the labels that exist
+			// We search in a string that combines the value of each data row.
+			var combinedValue = ''
+			for (var label in labels)
+			{
+				label = labels[label]
+				// concatenating the item value
+				combinedValue += item[label]
+			}
+			// !~ means: If NOT -1, we lowercase everything so searching is easier.
+			item.filtered = !~combinedValue.toLowerCase().indexOf(filter.toLowerCase())
+		}
+	}
+}
 
 
 
