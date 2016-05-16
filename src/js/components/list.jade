@@ -1,0 +1,21 @@
+list
+	h2 list sample
+	ul
+		li(each='{list}' class='{done:done}') { title }
+	script.
+		this.list = [
+			{
+				title: 'Hello, world!',
+				done: false
+			},
+			{
+				title: '牛乳を買う',
+				done: true
+			},
+			{
+				title: '豚肉を買う',
+				done: false
+			}
+		];
+
+

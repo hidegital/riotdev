@@ -1,9 +1,10 @@
 test1
-	p test1
+	p test1{ hoge }
+	list
 	style(scoped).
 		:scope p {
 			color: blue;
 		}
 	script.
 		console.log('test1');
-
+		this.hoge = "ホゲホゲ"

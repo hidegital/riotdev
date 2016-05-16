@@ -1,7 +1,11 @@
 extends layouts/_layout
 block title
 	title riot-dev
-block prepend body
+block prepend script
+	script(src='js/validator.js')
+block body
+	header
+		h1 |テスト
 	main
 		ul
 			li
@@ -11,7 +15,6 @@ block prepend body
 			li
 				a(href="#test2") test2
 		route
-
 
 
 

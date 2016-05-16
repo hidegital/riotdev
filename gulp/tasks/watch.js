@@ -3,6 +3,7 @@ import runSequence from 'run-sequence';
 import browserSync from 'browser-sync';
 import paths       from '../config';
 
+//gulp.task('jade-reload', ['jade','htmllint'], () => {
 gulp.task('jade-reload', ['jade'], () => {
   browserSync.reload();
 });
@@ -21,3 +22,4 @@ gulp.task('watch', () => {
   gulp.watch(paths.sass_watch, ['sass-reload']);
   gulp.watch(paths.js,         ['riot-reload']);
 });
+
