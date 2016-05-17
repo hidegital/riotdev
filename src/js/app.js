@@ -3,15 +3,20 @@
 import riot     from 'riot'
 import router   from 'riot-router'
 //import riotForm from 'riot-form'
-import home     from './components/home.jade'
-import app      from './components/app.jade'
-import test1    from './components/test1.jade'
-import test2    from './components/test2.jade'
-import notfound from './components/notfound.jade'
-import list     from './components/list.jade'
-import testform from './components/testform.jade'
-import picker   from './components/picker.tag'
-import application from './components/application.tag'
+//import home     from './components/home.jade'
+//import test1    from './components/test1.jade'
+//import test2    from './components/test2.jade'
+//import notfound from './components/notfound.jade'
+//import list     from './components/list.jade'
+//import testform from './components/testform.jade'
+//import picker   from './components/picker.tag'
+//import application from './components/application.tag'
+import home     from './tag/home.tag'
+import test1    from './tag/test1.tag'
+import test2    from './tag/test2.tag'
+import notfound from './tag/notfound.tag'
+import htmltest from './tag/htmltest.tag'
+
 
 riot.mount('*');
 
@@ -28,8 +33,6 @@ riot.router.routes([
 ]);
 
 riot.router.start();
-
-
 
 /*下記でfunctionをimport,module以下にmoduleを持つ*/
 import test from './module/testFnc';

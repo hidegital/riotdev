@@ -10,9 +10,7 @@ gulp.task('browserify', () => {
 		.transform(babelify, { presets: 'es2015' })
 		.transform(riotify, {
 			compact: true,
-			template: 'jade',
-			type: 'es6',
-			ext: 'jade'
+			type: 'es6'
 		})
 		.bundle()
 		.on('error', function(err) {
@@ -22,4 +20,6 @@ gulp.task('browserify', () => {
 		.pipe(source('app.js'))
 		.pipe(gulp.dest(paths.js_dir));
 });
+
+
 
