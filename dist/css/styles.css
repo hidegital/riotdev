@@ -1,12 +1,3 @@
-section#todo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-sizing: border-box;
-  width: 280px;
-  height: 100%;
-  padding: 20px; }
-
 section#list {
   position: absolute;
   top: 0;

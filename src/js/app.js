@@ -16,6 +16,7 @@ import test1    from './tag/test1.tag'
 import test2    from './tag/test2.tag'
 import notfound from './tag/notfound.tag'
 import htmltest from './tag/htmltest.tag'
+import myform   from './tag/myform.tag'
 
 
 riot.mount('*');
